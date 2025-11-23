@@ -31,85 +31,17 @@ menu ={"Pizza":150,
     "Shake":140}
 
 
-i1=Label(Menu,
-         text="Pizza",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-i1.grid(row=1,column=0,padx=10,pady=10)
-
-g1=Label(Menu,
-         text="150",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-g1.grid(row=1,column=1,padx=10,pady=10)
-
-i2=Label(Menu,
-         text="Burger",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-i2.grid(row=2,column=0,padx=10,pady=10)
-
-g2=Label(Menu,
-         text="80",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-g2.grid(row=2,column=1,padx=10,pady=10)
-
-i3=Label(Menu,
-         text="Pasta",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-i3.grid(row=3,column=0,padx=10,pady=10)
-
-g3=Label(Menu,
-         text="80",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-g3.grid(row=3,column=1,padx=10,pady=10)
-
-i4=Label(Menu,
-         text="Coffee",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-i4.grid(row=4,column=0,padx=10,pady=10)
-
-g4=Label(Menu,
-         text="20",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-g4.grid(row=4,column=1,padx=10,pady=10)
-
-i5=Label(Menu,
-         text="Shake",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-i5.grid(row=5,column=0,padx=10,pady=10)
-
-g5=Label(Menu,
-         text="140",
-         bg="light blue",
-         font=('ink free',20),
-         relief=GROOVE,
-         bd=5)
-g5.grid(row=5,column=1,padx=10,pady=10)
+row_num = 1
+for item, price in menu.items():
+    
+    Label(Menu, text=item, bg="light blue",
+          font=('ink free', 15), relief=GROOVE, bd=5).grid(row=row_num, column=0, padx=10, pady=10)
+    
+    
+    Label(Menu, text=str(price), bg="light blue",
+          font=('ink free', 15), relief=GROOVE, bd=5).grid(row=row_num, column=1, padx=10, pady=10)
+    
+    row_num += 1
 
 Bill=Frame(window,
            bg='#a5f2f3',
@@ -206,4 +138,3 @@ tot.grid(row=4,column=1,padx=5,pady=5)
 window.mainloop()
         
     
-
