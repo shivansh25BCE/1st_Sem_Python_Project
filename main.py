@@ -238,7 +238,7 @@ def admin():
 
     def delete():
         temp= select()
-        if temp!="" and temp!=0:
+        if temp!="":
             ans=messagebox.askyesno("Confirmation","Are you sure?")
             if ans==True:
                 del menu[temp]
