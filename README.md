@@ -14,9 +14,9 @@ The user can:
 5. Calculate the total amount of money that has to be paid
 
 For the Admin:
-1.Admin can add new items
-2.Admin can delete previous items
-3.Admin can update previous items
+1. Admin can add new items
+2. Admin can delete previous items
+3. Admin can update previous items
 
 Technologies used::
 1. Tkinter used to make the UI
