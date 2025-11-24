@@ -227,14 +227,23 @@ def admin():
             messagebox.showerror("Error","Please enter data")
             
     def update():
-        if name.get() and price.get():
-            menu[name.get()]=price.get()
-            messagebox.showinfo("Confirmation","Data has been updated")
-            Select_set()    
-        elif not(name.get()) and not(price.get()) and not(len(x.curselection())==0):
-            messagebox.showerror("Error","Enter data")
+        oname = select() 
+        if oname:
+            new_name = name.get()
+            nprice = price.get()
+
+            if new_name != "" and nprice != 0:
+                if oname != new_name:
+                    del menu[oname]
+                    
+                menu[new_name] = nprice
+                
+                messagebox.showinfo("Confirmation", "Data has been updated")
+                Select_set() 
+            else:
+                messagebox.showerror("Error", "Name cannot be empty and Price cannot be 0")
         else:
-            messagebox.showerror("Error","Select the data to be updated")
+            messagebox.showerror("Error", "Select the data to be updated first")
 
     def delete():
         temp= select()
