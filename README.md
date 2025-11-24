@@ -26,9 +26,9 @@ Technologies used::
 
 
 Steps to install and use:
-1.Download the main code
-2.Make sure the python software is up to date and it also supports tkinter and it's modules
-3.Use any python software to run the code file (Spyder prefferred)
+1. Download the main code
+2. Make sure the python software is up to date and it also supports tkinter and it's modules
+3. Use any python software to run the code file (Spyder prefferred)
 
 
 Screenshots added in the project report
