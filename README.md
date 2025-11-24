@@ -12,3 +12,10 @@ The user can:
 3. Select the amount of items
 4. See the bill being made right infront of your eyes
 5. Calculate the total amount of money that has to be paid
+
+For the Admin:
+1.Admin can add new items
+2.Admin can delete previous items
+3.Admin can update previous items
+
+
