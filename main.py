@@ -238,7 +238,7 @@ def admin():
 
     def delete():
         temp= select()
-        if temp!="":
+        if temp!="" and temp!=0:
             ans=messagebox.askyesno("Confirmation","Are you sure?")
             if ans==True:
                 del menu[temp]
@@ -348,5 +348,18 @@ user=Button(main,
            relief=RAISED,
            bd=5,
            padx=20)
-user.place(x=200,y=350)           
+user.place(x=200,y=350)  
+
+def close():
+    main.destroy()
+    
+Button(main,
+       text="X",
+       font=('ink free',10,'bold'),
+       bg='red',
+       fg='white',
+       command=close,
+       relief=RAISED,
+       bd=5,
+       padx=20).place(x=430,y=70)        
 main.mainloop()        
