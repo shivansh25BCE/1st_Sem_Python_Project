@@ -2,9 +2,9 @@
 
 # Overview 
 
- This program enables an admin to easliy manage his cafe by allowing him to add,delete and modify the data regarding the cafe menu.
- This program helps a user to easliy place his/her order using an easy interface provided and also see the bill being made infront of him.
- This program uses a multi face interface to make the use of the program easier for both the admin and the user.
+* This program enables an admin to easliy manage his cafe by allowing him to add,delete and modify the data regarding the cafe menu.
+* This program helps a user to easliy place his/her order using an easy interface provided and also see the bill being made infront of him.
+* This program uses a multi face interface to make the use of the program easier for both the admin and the user.
 
 # Features For The Users
 1. See the menu displayed on the left side
